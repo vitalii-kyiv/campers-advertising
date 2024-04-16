@@ -1,3 +1,5 @@
+import { fetchCatalogDataApi } from '../API/advertsServices';
+import RenderCatalog from './CatalogList/CatalogList';
 export const App = () => {
   return (
     <div
@@ -10,7 +12,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      Hello world
+      <RenderCatalog />
     </div>
   );
 };
