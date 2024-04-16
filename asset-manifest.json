@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/campers-advertising/static/css/main.7acaea2f.css",
+    "main.js": "/campers-advertising/static/js/main.598dd180.js",
+    "index.html": "/campers-advertising/index.html",
+    "main.7acaea2f.css.map": "/campers-advertising/static/css/main.7acaea2f.css.map",
+    "main.598dd180.js.map": "/campers-advertising/static/js/main.598dd180.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.598dd180.js"
+  ]
+}
