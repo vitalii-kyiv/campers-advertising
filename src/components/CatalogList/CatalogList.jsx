@@ -1,25 +1,31 @@
+import { fetchCatalogDataApi } from 'API/advertsServices';
 import CatalogListItem from 'components/CatalogListItem/CatalogListItem';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCatalogThunk } from 'store/catalogSlice/catalogThunk';
-import { selectCatalog, selectPage } from 'store/selector';
+import { selectCatalog } from 'store/selector';
 
-const RenderCatalog = () => {
+const CatalogList = () => {
+  // const dataTest = async () => {
+  //   const data = await fetchCatalogDataApi(1);
+  //   console.log('dataTest', data);
+  // };
+  // dataTest();
+
   const dispatch = useDispatch();
   const catalog = useSelector(selectCatalog);
-  const page = useSelector(selectPage);
 
   useEffect(() => {
-    dispatch(fetchCatalogThunk(page));
-  }, [dispatch, page]);
+    dispatch(fetchCatalogThunk(1));
+  }, [dispatch]);
 
   return (
     <ul>
       {catalog.map(item => (
-        <CatalogListItem key={item.id} item={item} />
+        <CatalogListItem key={item._id} item={item} />
       ))}
     </ul>
   );
 };
 
-export default RenderCatalog;
+export default CatalogList;

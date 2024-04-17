@@ -19,8 +19,11 @@ const catalogSlice = createSlice({
   extraReducers: builder => {
     builder
       .addCase(fetchCatalogThunk.fulfilled, (state, { payload }) => {
+        console.log('payload', payload.length);
         state.items.push(...payload);
-        // state.page += 1;
+        state.page += 1;
+        const expectedItemsPerPage = 4;
+        state.hasMore = payload.length === expectedItemsPerPage;
       })
       // .addCase(addContactThunk.fulfilled, (state, { payload }) => {
       //   state.items = [...state.items, payload];

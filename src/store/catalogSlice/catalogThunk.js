@@ -3,8 +3,9 @@ import { fetchCatalogDataApi } from '../../API/advertsServices';
 
 export const fetchCatalogThunk = createAsyncThunk(
   'catalog/fetchAll',
-  async page => {
-    const response = await fetchCatalogDataApi(page);
+  async (page, { getState }) => {
+    const pageNumber = page || getState().catalog.page;
+    const response = await fetchCatalogDataApi(pageNumber);
     return response;
   }
 );
