@@ -1,5 +1,3 @@
-import { createSelector } from '@reduxjs/toolkit';
-
 export const selectCatalog = state => state.catalog.items;
 export const selectHasMore = state => state.catalog.hasMore;
 export const selectPage = state => state.catalog.page;

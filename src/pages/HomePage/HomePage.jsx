@@ -1,5 +1,11 @@
+import Form from 'components/Form/Form';
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <Form />
+    </div>
+  );
 };
 
 export default HomePage;

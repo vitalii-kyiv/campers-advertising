@@ -1,15 +1,22 @@
-@import-normalize; /* bring in normalize.css styles */
+@import '~modern-normalize/modern-normalize.css';
+@import './css/base/common.css';
+@import './css/base/container.css';
+@import './css/base/reset.css';
+@import './css/base/typography.css';
+@import './css/utiles/variables.css';
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-font-text);
+  background-color: var(--color-main-background);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
+
+/* <p className={`${css.text} ${css.anotherClass} container`}>test css</p> */

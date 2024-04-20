@@ -1,4 +1,4 @@
-import { fetchCatalogDataApi } from 'API/advertsServices';
+// import { fetchCatalogDataApi } from 'API/advertsServices';
 import CatalogListItem from 'components/CatalogListItem/CatalogListItem';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

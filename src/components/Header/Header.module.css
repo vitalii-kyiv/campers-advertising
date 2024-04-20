@@ -1,0 +1,25 @@
+.headerСontainer {
+  background-color: var(--color-accent);
+  padding: 64px 0px;
+}
+
+.headerWrapper {
+  max-width: 1440px;
+  padding: 0px 64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  gap: 40px;
+}
+
+.adressList {
+  display: flex;
+  gap: 40px;
+}
+
+/* className={`${css.headerСontainer} firstTitle` */

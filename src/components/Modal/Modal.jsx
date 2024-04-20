@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux';
+// import { useDispatch, useSelector } from 'react-redux';
 
 const Modal = ({ item }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   return (
     <div style={{ width: '900px' }}>
       <p>Modal</p>
