@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/campers-advertising/static/css/main.7acaea2f.css",
-    "main.js": "/campers-advertising/static/js/main.598dd180.js",
+    "main.css": "/campers-advertising/static/css/main.9c9782e4.css",
+    "main.js": "/campers-advertising/static/js/main.d70ae118.js",
+    "static/css/178.24044915.chunk.css": "/campers-advertising/static/css/178.24044915.chunk.css",
+    "static/js/178.e984fd77.chunk.js": "/campers-advertising/static/js/178.e984fd77.chunk.js",
+    "static/js/413.4d21ddf7.chunk.js": "/campers-advertising/static/js/413.4d21ddf7.chunk.js",
     "index.html": "/campers-advertising/index.html",
-    "main.7acaea2f.css.map": "/campers-advertising/static/css/main.7acaea2f.css.map",
-    "main.598dd180.js.map": "/campers-advertising/static/js/main.598dd180.js.map"
+    "main.9c9782e4.css.map": "/campers-advertising/static/css/main.9c9782e4.css.map",
+    "main.d70ae118.js.map": "/campers-advertising/static/js/main.d70ae118.js.map",
+    "178.24044915.chunk.css.map": "/campers-advertising/static/css/178.24044915.chunk.css.map",
+    "178.e984fd77.chunk.js.map": "/campers-advertising/static/js/178.e984fd77.chunk.js.map",
+    "413.4d21ddf7.chunk.js.map": "/campers-advertising/static/js/413.4d21ddf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.598dd180.js"
+    "static/css/main.9c9782e4.css",
+    "static/js/main.d70ae118.js"
   ]
 }
