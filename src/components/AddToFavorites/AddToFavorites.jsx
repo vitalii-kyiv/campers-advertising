@@ -14,7 +14,7 @@ const AddToFavorites = ({ item }) => {
         Сердечко
       </button>
       <svg className={css.heartSvg} width="500" height="500">
-        <use href="../../images/symbol-defs.svg#icon-Food"></use>
+        <use href="/images/symbol-defs.svg#heart"></use>
       </svg>
     </div>
   );

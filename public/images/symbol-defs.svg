@@ -26,7 +26,7 @@
 <symbol id="icon-Food" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M25.333 20v-16c-6.421 6.125-6.696 11.091-6.666 16h6.666zM25.333 20v8h-1.333v-4M10.667 5.333v22.667M6.667 5.333v4c0 2.209 1.791 4 4 4s4-1.791 4-4v0-4"></path>
 </symbol>
-<symbol id="icon-Heart" viewBox="0 0 33 32">
+<symbol id="heart" viewBox="0 0 33 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.3742" d="M25.65 4.758c-1.028-1.028-2.448-1.664-4.017-1.664s-2.989 0.636-4.017 1.664l-1.095 1.095-1.095-1.095c-1.028-1.028-2.448-1.664-4.017-1.664-3.137 0-5.681 2.543-5.681 5.681 0 1.569 0.636 2.989 1.664 4.017l9.128 9.128 9.128-9.128c1.028-1.028 1.664-2.448 1.664-4.017s-0.636-2.989-1.664-4.017l-0-0z"></path>
 </symbol>
 <symbol id="icon-Petrol" viewBox="0 0 32 32">
