@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/178.04b3f0a6.chunk.css","mappings":"AAAA,gCACE,QAAS,CACT,UACF,CCHA,yBACE,SACF","sources":["components/AddToFavorites/AddToFavorites.module.css","pages/CatalogPage/CatalogPage.module.css"],"sourcesContent":[".heartSvg {\n  fill: red;\n  stroke: red;\n}\n",".text {\n  color: red;\n}\n"],"names":[],"sourceRoot":""}
