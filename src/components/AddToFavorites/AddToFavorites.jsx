@@ -12,7 +12,7 @@ const AddToFavorites = ({ item }) => {
   return (
     <div>
       <button type="click">
-        <HeartIcon onClick={handleAddToFavorites} className="icon-style" />
+        <HeartIcon onClick={handleAddToFavorites} className={css.heartSvg} />
       </button>
     </div>
   );

@@ -36,6 +36,8 @@ ol {
 
 button {
   cursor: pointer;
+  padding: 0;
+  background-color: transparent;
 }
 
 a {

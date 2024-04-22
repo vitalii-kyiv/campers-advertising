@@ -1,4 +1,4 @@
 .heartSvg {
-  fill: red;
-  stroke: red;
+  background-color: var(--color-main-background);
+  border: none;
 }

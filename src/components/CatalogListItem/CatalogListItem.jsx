@@ -11,6 +11,7 @@ import { ReactComponent as PetrolIcon } from '../../images/petrol.svg';
 import { ReactComponent as KitchenIcon } from '../../images/kitchen.svg';
 import { ReactComponent as BedsIcon } from '../../images/beds.svg';
 import { ReactComponent as AcIcon } from '../../images/ac.svg';
+import { ReactComponent as StarIcon } from '../../images/star.svg';
 
 const CatalogListItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -33,14 +34,22 @@ const CatalogListItem = ({ item }) => {
         />
       </div>
       <div>
-        <h2 className="firstTitle">{item.name}</h2>
-        <div className={css.priceWrapper}>
-          {' '}
-          <span className="firstTitle">{`€${item.price}.00`}</span>
-          <AddToFavorites item={item} />
+        <div className={css.titlePriceWrapper}>
+          <h2 className={`className=${css.catalogItemTitle} firstTitle`}>
+            {item.name}
+          </h2>
+          <div className={css.priceWrapper}>
+            {' '}
+            <span className="firstTitle">{`€${item.price}.00`}</span>
+            <AddToFavorites item={item} />
+          </div>
         </div>
+
         <div className={css.ratingLocationWrapper}>
-          <span>{`${item.rating} (${item.reviews.length} Reviews)`}</span>
+          <StarIcon className={css.starSvg} />
+          <span
+            className={css.itemRating}
+          >{`${item.rating} (${item.reviews.length} Reviews)`}</span>
           <LocationIcon />
           <p>{item.location}</p>
         </div>
@@ -49,7 +58,9 @@ const CatalogListItem = ({ item }) => {
           <li className={css.detailsListItem}>
             <div className={css.detailsItemWrapper}>
               <AdultsIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>{item.adults}</span>
+              <span
+                className={css.detailsItemText}
+              >{`${item.adults} adults`}</span>
             </div>
           </li>
           <li className={css.detailsListItem}>
@@ -67,28 +78,30 @@ const CatalogListItem = ({ item }) => {
           <li className={css.detailsListItem}>
             <div className={css.detailsItemWrapper}>
               <KitchenIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>
-                {item.details.kitchen}
-              </span>
+              <span className={css.detailsItemText}>kitchen</span>
             </div>
           </li>
           <li className={css.detailsListItem}>
             <div className={css.detailsItemWrapper}>
               <BedsIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>{item.details.beds}</span>
+              <span
+                className={css.detailsItemText}
+              >{`${item.details.beds} beds`}</span>
             </div>
           </li>
           <li className={css.detailsListItem}>
             <div className={css.detailsItemWrapper}>
               <AcIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>
-                {item.details.airConditioner}
-              </span>
+              <span className={css.detailsItemText}>AC</span>
             </div>
           </li>
         </ul>
-        <button type="button" onClick={handleModal}>
-          ShowMore
+        <button
+          className={`${css.modalButton} buttonText`}
+          type="button"
+          onClick={handleModal}
+        >
+          Show more
         </button>
         {openModal && <Modal item={item} />}
       </div>

@@ -6,12 +6,6 @@
 @import './css/utiles/variables.css';
 
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--color-font-text);
-  background-color: var(--color-main-background);
 }
 
 /* code {
