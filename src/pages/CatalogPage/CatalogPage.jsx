@@ -9,8 +9,6 @@ const CatalogPage = () => {
   console.log('hasMore', hasMore);
   return (
     <div>
-      <p className={css.text}>test css</p>
-      CatalogPage
       <CatalogList />
       {hasMore && <ButtonLoadMore />}
     </div>

@@ -1,0 +1,47 @@
+.catalogListItem {
+  display: flex;
+  flex-grow: 0;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.itemImgWrapper {
+  min-width: 290px;
+}
+
+.catalogItemImage {
+  border-radius: 10px;
+}
+
+.catalogItemTitle {
+}
+
+.priceWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.ratingLocationWrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.itemText {
+  max-width: 525px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detailsList {
+  display: flex;
+  gap: 8px;
+  max-width: 526px;
+  flex-wrap: wrap;
+}
+.detailsItemWrapper {
+  display: flex;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 100px;
+}

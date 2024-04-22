@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { toggleFavorite } from 'store/favoritesSlice/favoritesSlice';
 import css from './AddToFavorites.module.css';
+import { ReactComponent as HeartIcon } from '../../images/heart.svg';
 
 const AddToFavorites = ({ item }) => {
   const dispatch = useDispatch();
@@ -10,12 +11,9 @@ const AddToFavorites = ({ item }) => {
   };
   return (
     <div>
-      <button type="click" onClick={handleAddToFavorites}>
-        Сердечко
+      <button type="click">
+        <HeartIcon onClick={handleAddToFavorites} className="icon-style" />
       </button>
-      <svg className={css.heartSvg} width="500" height="500">
-        <use href="/images/symbol-defs.svg#heart"></use>
-      </svg>
     </div>
   );
 };
