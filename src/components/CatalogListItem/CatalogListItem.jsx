@@ -12,14 +12,14 @@ import { ReactComponent as KitchenIcon } from '../../images/kitchen.svg';
 import { ReactComponent as BedsIcon } from '../../images/beds.svg';
 import { ReactComponent as AcIcon } from '../../images/ac.svg';
 import { ReactComponent as StarIcon } from '../../images/star.svg';
+import { useState } from 'react';
 
 const CatalogListItem = ({ item }) => {
-  const dispatch = useDispatch();
-  const openModal = useSelector(selectModal);
-  console.log(openModal);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  console.log('isModalOpen', isModalOpen);
 
   const handleModal = () => {
-    dispatch(toggleModal());
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -103,7 +103,7 @@ const CatalogListItem = ({ item }) => {
         >
           Show more
         </button>
-        {openModal && <Modal item={item} />}
+        {isModalOpen && <Modal key={item._id + 10} item={item} />}
       </div>
     </li>
   );

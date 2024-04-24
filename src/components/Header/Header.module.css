@@ -1,6 +1,7 @@
 .headerСontainer {
   background-color: var(--color-accent);
-  padding: 64px 0px;
+  padding: 48px 0px;
+  margin-bottom: 24px;
 }
 
 .headerWrapper {
