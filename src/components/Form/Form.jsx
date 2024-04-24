@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import css from './Form.module.css';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -41,48 +42,57 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className={css.formContainer}>
       <form action="" onSubmit={handleSubmit}>
-        {' '}
-        Book your campervan now
-        <p>Stay connected! We are always ready to help you.</p>
-        <label htmlFor="name"></label>
-        <input
-          placeholder="name"
-          type="text"
-          name="name"
-          id="name"
-          value={name}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          required
-        />
-        <label htmlFor="email"></label>
-        <input
-          placeholder="Email"
-          type="email"
-          name="email"
-          id="email"
-          value={email}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          required
-        />
-        <label htmlFor="bookingDate"></label>
-        <input
-          placeholder="Booking date"
-          type="date"
-          name="bookingDate"
-          id="bookingDate"
-          required
-        />
-        <label htmlFor="comment"></label>
-        <textarea
-          placeholder="Comment"
-          type="textarea"
-          name="comment"
-          id="comment"
-        ></textarea>
+        <h2 className={css.formTitle}>Book your campervan now</h2>
+        <p className={css.formText}>
+          Stay connected! We are always ready to help you.
+        </p>
+        <div className={css.formElementWrapper}>
+          {' '}
+          <label htmlFor="name"></label>
+          <input
+            className={css.formElementInput}
+            placeholder="name"
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            required
+          />
+          <label htmlFor="email"></label>
+          <input
+            className={css.formElementInput}
+            placeholder="Email"
+            type="email"
+            name="email"
+            id="email"
+            value={email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            required
+          />
+          <label htmlFor="bookingDate"></label>
+          <input
+            className={css.formElementInput}
+            placeholder="Booking date"
+            type="date"
+            name="bookingDate"
+            id="bookingDate"
+            required
+          />
+          <label htmlFor="comment"></label>
+          <textarea
+            className={css.formElementText}
+            placeholder="Comment"
+            type="textarea"
+            name="comment"
+            id="comment"
+          ></textarea>
+        </div>
+
         <button type="submit">Send</button>
       </form>
     </div>

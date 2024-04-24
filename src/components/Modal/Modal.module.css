@@ -14,18 +14,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 982px;
+  /* height: 720px; */
+  overflow-y: scroll;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-
-.titlePriceWrapper {
+.titleIconWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
 }
+/* .titlePriceWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+} */
 .priceWrapper {
   display: flex;
   gap: 10px;
@@ -36,18 +44,69 @@
   display: flex;
   gap: 4px;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .starSvg {
-  fill: var(--color-reviews-stars);
-  stroke: var(--color-reviews-stars);
+  fill: red;
+  stroke: red;
 }
 .itemRating {
   margin-right: 16px;
 }
 
+.imageList {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.itemImgWrapper {
+  overflow: hidden;
+  width: 290px;
+  height: 310px;
+}
+
+.catalogItemImage {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .itemText {
   max-width: 902px;
+  /* height: 72px;
+  overflow-y: scroll; */
   margin-bottom: 24px;
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 24px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.2);
+}
+
+.futuresReviewsTitle {
+  position: relative;
+}
+.futuresReviewsTitle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 6px;
+  left: 0;
+  top: 48px;
+  background-color: var(--color-accent);
+}
+
+.futuresReviewsTitle.active::after {
+  width: 100%;
+}
+
+.futuresReviewFormWrapper {
+  display: flex;
+  gap: 24px;
 }

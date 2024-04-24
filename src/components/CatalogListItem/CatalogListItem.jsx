@@ -55,46 +55,58 @@ const CatalogListItem = ({ item }) => {
         </div>
         <p className={css.itemText}>{item.description}</p>
         <ul className={css.detailsList}>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <AdultsIcon className={css.detailsIcon} />
-              <span
-                className={css.detailsItemText}
-              >{`${item.adults} adults`}</span>
-            </div>
-          </li>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <TransmissionIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>{item.transmission}</span>
-            </div>
-          </li>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <PetrolIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>{item.engine}</span>
-            </div>
-          </li>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <KitchenIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>kitchen</span>
-            </div>
-          </li>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <BedsIcon className={css.detailsIcon} />
-              <span
-                className={css.detailsItemText}
-              >{`${item.details.beds} beds`}</span>
-            </div>
-          </li>
-          <li className={css.detailsListItem}>
-            <div className={css.detailsItemWrapper}>
-              <AcIcon className={css.detailsIcon} />
-              <span className={css.detailsItemText}>AC</span>
-            </div>
-          </li>
+          {item.adults > 0 && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <AdultsIcon className={css.detailsIcon} />
+                <span
+                  className={css.detailsItemText}
+                >{`${item.adults} adults`}</span>
+              </div>
+            </li>
+          )}
+          {item.transmission && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <TransmissionIcon className={css.detailsIcon} />
+                <span className={css.detailsItemText}>{item.transmission}</span>
+              </div>
+            </li>
+          )}
+          {item.engine && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <PetrolIcon className={css.detailsIcon} />
+                <span className={css.detailsItemText}>{item.engine}</span>
+              </div>
+            </li>
+          )}
+          {item.details.kitchen > 0 && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <KitchenIcon className={css.detailsIcon} />
+                <span className={css.detailsItemText}>kitchen</span>
+              </div>
+            </li>
+          )}
+          {item.details.beds > 0 && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <BedsIcon className={css.detailsIcon} />
+                <span
+                  className={css.detailsItemText}
+                >{`${item.details.beds} beds`}</span>
+              </div>
+            </li>
+          )}
+          {item.details.airConditioner > 0 && (
+            <li className={css.detailsListItem}>
+              <div className={css.detailsItemWrapper}>
+                <AcIcon className={css.detailsIcon} />
+                <span className={css.detailsItemText}>AC</span>
+              </div>
+            </li>
+          )}
         </ul>
         <button
           className={`${css.modalButton} buttonText`}
@@ -103,7 +115,9 @@ const CatalogListItem = ({ item }) => {
         >
           Show more
         </button>
-        {isModalOpen && <Modal key={item._id + 10} item={item} />}
+        {isModalOpen && (
+          <Modal key={item._id + 10} item={item} onClose={handleModal} />
+        )}
       </div>
     </li>
   );

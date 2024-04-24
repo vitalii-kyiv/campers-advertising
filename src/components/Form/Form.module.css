@@ -1,0 +1,34 @@
+.formContainer {
+  width: 448px;
+  height: 532px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.formTitle {
+  margin-bottom: 8px;
+}
+
+.formText {
+  margin-bottom: 24px;
+}
+
+.formElementWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formElementInput {
+  border-radius: 10px;
+  width: 400px;
+  height: 56px;
+  background-color: var(--color-secondary-background);
+}
+.formElementText {
+  border-radius: 10px;
+  width: 400px;
+  height: 114px;
+  background-color: var(--color-secondary-background);
+}
