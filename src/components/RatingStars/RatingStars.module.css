@@ -1,0 +1,6 @@
+.filledStar {
+  fill: var(--color-reviews-stars);
+}
+.emptyStar {
+  fill: var(--color-secondary-background);
+}

@@ -1,5 +1,11 @@
+import Filter from 'components/Filter/Filter';
+
 const HomePage = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Filter />
+    </div>
+  );
 };
 
 export default HomePage;

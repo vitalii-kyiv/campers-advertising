@@ -1,5 +1,6 @@
 import css from './Reviews.module.css';
 import { ReactComponent as StarIcon } from '../../images/star.svg';
+import RatingStars from 'components/RatingStars/RatingStars';
 
 const Reviews = ({ item }) => {
   return (
@@ -11,15 +12,9 @@ const Reviews = ({ item }) => {
               <div className={css.reviewerPhoto}>{review.reviewer_name[0]}</div>
               <div className={css.nameStarsWrapper}>
                 <span className={css.reviewerName}>{review.reviewer_name}</span>
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
-                <StarIcon />
+                <RatingStars filledNumber={review.reviewer_rating} />
               </div>
             </div>
-
-            <span>{review.reviewer_rating}</span>
             <p>{review.comment}</p>
           </li>
         ))}

@@ -1,9 +1,6 @@
 import AddToFavorites from 'components/AddToFavorites/AddToFavorites';
 import Modal from 'components/Modal/Modal';
 import css from './CatalogListItem.module.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleModal } from 'store/modalSlice/modalSlice';
-import { selectModal } from 'store/selector';
 import { ReactComponent as LocationIcon } from '../../images/location.svg';
 import { ReactComponent as AdultsIcon } from '../../images/adults.svg';
 import { ReactComponent as TransmissionIcon } from '../../images/transmission.svg';
