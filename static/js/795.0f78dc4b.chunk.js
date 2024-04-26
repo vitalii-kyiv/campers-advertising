@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[795],{4413:function(e,t,n){n.r(t);var r=n(1815),a=n(4420),o=n(448),c=n(184);t.default=function(){var e=(0,a.v9)(o.Tc);return console.log("favorites",e),(0,c.jsx)("div",{children:e.length>0?(0,c.jsx)("ul",{children:e.map((function(e){return(0,c.jsx)(r.Z,{item:e},e._id)}))}):(0,c.jsx)("h2",{children:"You haven't added anything to favorites."})})}}}]);
+//# sourceMappingURL=795.0f78dc4b.chunk.js.map
