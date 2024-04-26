@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/campers-advertising/static/css/main.07d94805.css",
-    "main.js": "/campers-advertising/static/js/main.2d7674cc.js",
-    "static/css/578.b16e3b47.chunk.css": "/campers-advertising/static/css/578.b16e3b47.chunk.css",
-    "static/js/578.05e4ed64.chunk.js": "/campers-advertising/static/js/578.05e4ed64.chunk.js",
-    "static/css/795.b319ab3a.chunk.css": "/campers-advertising/static/css/795.b319ab3a.chunk.css",
-    "static/js/795.0f78dc4b.chunk.js": "/campers-advertising/static/js/795.0f78dc4b.chunk.js",
+    "main.css": "/campers-advertising/static/css/main.ffdb91e6.css",
+    "main.js": "/campers-advertising/static/js/main.47e400d8.js",
+    "static/css/372.271acd4e.chunk.css": "/campers-advertising/static/css/372.271acd4e.chunk.css",
+    "static/js/372.ec6d4a78.chunk.js": "/campers-advertising/static/js/372.ec6d4a78.chunk.js",
+    "static/css/795.17e85269.chunk.css": "/campers-advertising/static/css/795.17e85269.chunk.css",
+    "static/js/795.ec4e4dba.chunk.js": "/campers-advertising/static/js/795.ec4e4dba.chunk.js",
     "static/css/44.6310eaba.chunk.css": "/campers-advertising/static/css/44.6310eaba.chunk.css",
-    "static/js/44.82ad00fd.chunk.js": "/campers-advertising/static/js/44.82ad00fd.chunk.js",
-    "static/js/815.fb9cad88.chunk.js": "/campers-advertising/static/js/815.fb9cad88.chunk.js",
+    "static/js/44.8505be82.chunk.js": "/campers-advertising/static/js/44.8505be82.chunk.js",
+    "static/js/815.4cfb3a85.chunk.js": "/campers-advertising/static/js/815.4cfb3a85.chunk.js",
     "static/media/beautiful-campsite-mountains-with-rv-wooden-bench-min.jpg": "/campers-advertising/static/media/beautiful-campsite-mountains-with-rv-wooden-bench-min.8c0d8707977efc49530b.jpg",
     "static/media/ac.svg": "/campers-advertising/static/media/ac.d1bbaa9bfe0a020470da6033fd7fa0b9.svg",
     "static/media/fullyIntegrated.svg": "/campers-advertising/static/media/fullyIntegrated.0d3ae254c3c5861146f3207b2598c6be.svg",
@@ -25,18 +25,18 @@
     "static/media/location.svg": "/campers-advertising/static/media/location.56efbbfb25a6795d872187a9d9246a6a.svg",
     "static/media/kitchen.svg": "/campers-advertising/static/media/kitchen.013d9240249f9fd10ef71468661efe3e.svg",
     "static/media/close.svg": "/campers-advertising/static/media/close.d7457d50d0c2fc47ca82735ef3c29888.svg",
-    "main.07d94805.css.map": "/campers-advertising/static/css/main.07d94805.css.map",
-    "main.2d7674cc.js.map": "/campers-advertising/static/js/main.2d7674cc.js.map",
-    "578.b16e3b47.chunk.css.map": "/campers-advertising/static/css/578.b16e3b47.chunk.css.map",
-    "578.05e4ed64.chunk.js.map": "/campers-advertising/static/js/578.05e4ed64.chunk.js.map",
-    "795.b319ab3a.chunk.css.map": "/campers-advertising/static/css/795.b319ab3a.chunk.css.map",
-    "795.0f78dc4b.chunk.js.map": "/campers-advertising/static/js/795.0f78dc4b.chunk.js.map",
+    "main.ffdb91e6.css.map": "/campers-advertising/static/css/main.ffdb91e6.css.map",
+    "main.47e400d8.js.map": "/campers-advertising/static/js/main.47e400d8.js.map",
+    "372.271acd4e.chunk.css.map": "/campers-advertising/static/css/372.271acd4e.chunk.css.map",
+    "372.ec6d4a78.chunk.js.map": "/campers-advertising/static/js/372.ec6d4a78.chunk.js.map",
+    "795.17e85269.chunk.css.map": "/campers-advertising/static/css/795.17e85269.chunk.css.map",
+    "795.ec4e4dba.chunk.js.map": "/campers-advertising/static/js/795.ec4e4dba.chunk.js.map",
     "44.6310eaba.chunk.css.map": "/campers-advertising/static/css/44.6310eaba.chunk.css.map",
-    "44.82ad00fd.chunk.js.map": "/campers-advertising/static/js/44.82ad00fd.chunk.js.map",
-    "815.fb9cad88.chunk.js.map": "/campers-advertising/static/js/815.fb9cad88.chunk.js.map"
+    "44.8505be82.chunk.js.map": "/campers-advertising/static/js/44.8505be82.chunk.js.map",
+    "815.4cfb3a85.chunk.js.map": "/campers-advertising/static/js/815.4cfb3a85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07d94805.css",
-    "static/js/main.2d7674cc.js"
+    "static/css/main.ffdb91e6.css",
+    "static/js/main.47e400d8.js"
   ]
 }
