@@ -1,9 +1,10 @@
 .heartSvg {
   background-color: var(--color-main-background);
-  border: none;
-  fill: blue;
+  fill: #fff;
+  stroke: var(--color-font-title);
 }
 
 .heartSvgFavorite {
-  fill: red;
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
 }

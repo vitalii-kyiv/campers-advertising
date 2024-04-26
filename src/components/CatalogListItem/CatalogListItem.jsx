@@ -39,14 +39,13 @@ const CatalogListItem = ({ item }) => {
             <AddToFavorites item={item} />
           </div>
         </div>
-
         <div className={css.ratingLocationWrapper}>
           <StarIcon className={css.starSvg} />
           <span
-            className={css.itemRating}
+            className={`${css.itemRating} mainText`}
           >{`${item.rating} (${item.reviews.length} Reviews)`}</span>
           <LocationIcon />
-          <p>{item.location}</p>
+          <p className="mainText">{item.location}</p>
         </div>
         <p className={css.itemText}>{item.description}</p>
         <ul className={css.detailsList}>

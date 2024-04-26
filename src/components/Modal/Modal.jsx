@@ -20,11 +20,11 @@ const Modal = ({ item, onClose }) => {
       }
     };
     window.addEventListener('keydown', handleKeyDown);
-    // document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      // document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
     };
   }, [onClose]);
 
@@ -64,61 +64,63 @@ const Modal = ({ item, onClose }) => {
         <div className={css.ratingLocationWrapper}>
           <StarIcon className={css.starSvg} />
           <span
-            className={css.itemRating}
+            className={`${css.itemRating} mainText`}
           >{`${item.rating} (${item.reviews.length} Reviews)`}</span>
           <LocationIcon />
-          <p>{item.location}</p>
+          <p className="mainText">{item.location}</p>
         </div>
         <div className={css.priceWrapper}>
           <span className="firstTitle">{`€${item.price}.00`}</span>
         </div>
-        <ul className={css.imageList}>
-          {item.gallery.map((image, index) => (
-            <li key={index}>
-              <div className={css.itemImgWrapper}>
-                <img
-                  className={css.catalogItemImage}
-                  src={image}
-                  alt="camper"
-                  width="290"
-                  height="310"
-                />
-              </div>
-            </li>
-          ))}
-        </ul>
-        <p className={css.itemText}>{item.description}</p>
-        <div className={css.titleWrapper}>
-          <h2
-            className={`${css.futuresReviewsTitle} ${
-              isFuturesOpen ? css.active : ''
-            }`}
-            onClick={handleFuture}
-          >
-            Futures
-          </h2>
-          <h2
-            className={`${css.futuresReviewsTitle} ${
-              isReviewsOpen ? css.active : ''
-            }`}
-            onClick={handleReviews}
-          >
-            Reviews
-          </h2>
-        </div>
-        {isFuturesOpen && (
-          <div className={css.futuresReviewFormWrapper}>
-            <Futures item={item} />
-            <Form />
+        <div className={css.scrollWrapper}>
+          <ul className={css.imageList}>
+            {item.gallery.map((image, index) => (
+              <li key={index}>
+                <div className={css.itemImgWrapper}>
+                  <img
+                    className={css.catalogItemImage}
+                    src={image}
+                    alt="camper"
+                    width="290"
+                    height="310"
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+          <p className={css.itemText}>{item.description}</p>
+          <div className={css.titleWrapper}>
+            <h2
+              className={`${css.futuresReviewsTitle} secondTitle ${
+                isFuturesOpen ? css.active : ''
+              }`}
+              onClick={handleFuture}
+            >
+              Futures
+            </h2>
+            <h2
+              className={`${css.futuresReviewsTitle}  secondTitle ${
+                isReviewsOpen ? css.active : ''
+              }`}
+              onClick={handleReviews}
+            >
+              Reviews
+            </h2>
           </div>
-        )}
+          {isFuturesOpen && (
+            <div className={css.futuresReviewFormWrapper}>
+              <Futures item={item} />
+              <Form />
+            </div>
+          )}
 
-        {isReviewsOpen && (
-          <div className={css.futuresReviewFormWrapper}>
-            <Reviews item={item} />
-            <Form />
-          </div>
-        )}
+          {isReviewsOpen && (
+            <div className={css.futuresReviewFormWrapper}>
+              <Reviews item={item} />
+              <Form />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

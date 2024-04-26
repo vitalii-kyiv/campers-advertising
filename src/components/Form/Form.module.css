@@ -15,20 +15,30 @@
 }
 
 .formElementWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
 }
 
 .formElementInput {
+  margin-bottom: 16px;
   border-radius: 10px;
+  padding-left: 18px;
   width: 400px;
   height: 56px;
   background-color: var(--color-secondary-background);
 }
+
 .formElementText {
   border-radius: 10px;
+  padding-left: 18px;
+  padding-top: 18px;
   width: 400px;
   height: 114px;
   background-color: var(--color-secondary-background);
+  margin-bottom: 24px;
+  resize: none;
+}
+
+.formButton {
+  border-radius: 200px;
+  padding: 16px 60px;
+  background-color: var(--color-accent);
 }

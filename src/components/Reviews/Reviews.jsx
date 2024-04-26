@@ -1,5 +1,4 @@
 import css from './Reviews.module.css';
-import { ReactComponent as StarIcon } from '../../images/star.svg';
 import RatingStars from 'components/RatingStars/RatingStars';
 
 const Reviews = ({ item }) => {

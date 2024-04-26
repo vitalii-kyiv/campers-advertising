@@ -93,52 +93,52 @@ const Futures = ({ item }) => {
         )}
       </ul>
       <ul className={css.vehicleDetailsList}>
-        <h3>Vehicle details</h3>
+        <h3 className="secondTitle">Vehicle details</h3>
         {item.form && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Form</span>
-              <span className={css.detailsItemText}>{item.form}</span>
+              <span className="ditailsText">Form</span>
+              <span className="ditailsText">{item.form}</span>
             </div>
           </li>
         )}
         {item.form && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Length</span>
-              <span className={css.detailsItemText}>{item.length}</span>
+              <span className="ditailsText">Length</span>
+              <span className="ditailsText">{item.length}</span>
             </div>
           </li>
         )}
         {item.width && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Width</span>
-              <span className={css.detailsItemText}>{item.width}</span>
+              <span className="ditailsText">Width</span>
+              <span className="ditailsText">{item.width}</span>
             </div>
           </li>
         )}
         {item.height && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Height</span>
-              <span className={css.detailsItemText}>{item.height}</span>
+              <span className="ditailsText">Height</span>
+              <span className="ditailsText">{item.height}</span>
             </div>
           </li>
         )}
         {item.tank && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Tank</span>
-              <span className={css.detailsItemText}>{item.tank}</span>
+              <span className="ditailsText">Tank</span>
+              <span className="ditailsText">{item.tank}</span>
             </div>
           </li>
         )}
         {item.consumption && (
           <li className={css.vehicleDetailsListItem}>
             <div className={css.vehicleDetailsItemWrapper}>
-              <span>Consumption</span>
-              <span className={css.detailsItemText}>{item.consumption}</span>
+              <span className="ditailsText">Consumption</span>
+              <span className="ditailsText">{item.consumption}</span>
             </div>
           </li>
         )}
