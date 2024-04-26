@@ -21,5 +21,3 @@ const favoritesSlice = createSlice({
 
 export const { toggleFavorite } = favoritesSlice.actions;
 export const favoritesSliceReducer = favoritesSlice.reducer;
-
-// export const { addFilter } = filterSlice.actions;

@@ -2,7 +2,7 @@
   width: 448px;
   height: 532px;
   border: 1px solid rgba(16, 24, 40, 0.2);
-  border-radius: 10px;
+  border-radius: 200px;
   padding: 24px;
 }
 
@@ -12,9 +12,6 @@
 
 .formText {
   margin-bottom: 24px;
-}
-
-.formElementWrapper {
 }
 
 .formElementInput {
@@ -27,7 +24,7 @@
 }
 
 .formElementText {
-  border-radius: 10px;
+  border-radius: 200px;
   padding-left: 18px;
   padding-top: 18px;
   width: 400px;

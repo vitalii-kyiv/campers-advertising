@@ -10,8 +10,6 @@ import Form from 'components/Form/Form';
 const Modal = ({ item, onClose }) => {
   const [isFuturesOpen, setIsFuturesOpen] = useState(false);
   const [isReviewsOpen, setIsReviewsOpen] = useState(false);
-  console.log('isFuturesOpen', isFuturesOpen);
-  console.log('isReviewsOpen', isReviewsOpen);
 
   useEffect(() => {
     const handleKeyDown = evt => {

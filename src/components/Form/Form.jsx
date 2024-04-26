@@ -32,7 +32,7 @@ const Form = () => {
     }
 
     dispatch(addBookingDetails({ id: nanoid(), name, email, bookingDate }));
-    // window.location.reload();
+    window.location.reload();
   };
 
   return (

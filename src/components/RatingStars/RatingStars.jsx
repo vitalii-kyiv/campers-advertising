@@ -1,6 +1,5 @@
 import { ReactComponent as StarIcon } from '../../images/star.svg';
-import css from './RatingStars.module.css'; // Припускаємо, що стилі знаходяться в цьому файлі
-
+import css from './RatingStars.module.css';
 const RatingStars = ({ filledNumber }) => {
   const starsQuantity = 5;
   const starsArray = new Array(starsQuantity).fill(null);

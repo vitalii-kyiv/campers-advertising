@@ -4,13 +4,3 @@
 @import './css/base/reset.css';
 @import './css/base/typography.css';
 @import './css/utiles/variables.css';
-
-body {
-}
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-/* <p className={`${css.text} ${css.anotherClass} container`}>test css</p> */

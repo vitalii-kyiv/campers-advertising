@@ -2,8 +2,6 @@ import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Header from './Header/Header';
 import HomePage from 'pages/HomePage/HomePage';
-// import CatalogPage from 'pages/CatalogPage/CatalogPage';
-// import FavoritesPage from 'pages/FavoritesPage/FavoritesPage';
 const CatalogPage = lazy(() => import('pages/CatalogPage/CatalogPage'));
 const FavoritesPage = lazy(() => import('pages/FavoritesPage/FavoritesPage'));
 

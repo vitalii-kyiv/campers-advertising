@@ -1,4 +1,3 @@
-import Filter from 'components/Filter/Filter';
 import css from './HomePage.module.css';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ const HomePage = () => {
           </button>
         </Link>
       </div>
-      <Filter />
     </div>
   );
 };

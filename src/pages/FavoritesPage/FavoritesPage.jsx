@@ -4,7 +4,6 @@ import { selectFavorites } from 'store/selector';
 
 const FavoritesPage = () => {
   const favorites = useSelector(selectFavorites);
-  console.log('favorites', favorites);
   return (
     <div>
       {favorites.length > 0 ? (

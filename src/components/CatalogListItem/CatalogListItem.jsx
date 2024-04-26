@@ -13,7 +13,6 @@ import { useState } from 'react';
 
 const CatalogListItem = ({ item }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log('isModalOpen', isModalOpen);
 
   const handleModal = () => {
     setIsModalOpen(!isModalOpen);
