@@ -17,6 +17,7 @@ const CatalogList = () => {
 
   useEffect(() => {
     dispatch(fetchCatalogThunk(1));
+    return () => {};
   }, [dispatch]);
 
   return (

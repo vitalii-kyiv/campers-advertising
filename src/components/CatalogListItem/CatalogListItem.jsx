@@ -32,9 +32,7 @@ const CatalogListItem = ({ item }) => {
       </div>
       <div>
         <div className={css.titlePriceWrapper}>
-          <h2 className={`className=${css.catalogItemTitle} firstTitle`}>
-            {item.name}
-          </h2>
+          <h2 className={`${css.catalogItemTitle} firstTitle`}>{item.name}</h2>
           <div className={css.priceWrapper}>
             {' '}
             <span className="firstTitle">{`€${item.price}.00`}</span>

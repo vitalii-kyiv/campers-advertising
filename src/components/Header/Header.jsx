@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
+import { ReactComponent as FullyIntegratedCamperIcon } from '../../images/fullyIntegrated.svg';
 import css from './Header.module.css';
 
 const Header = () => {
@@ -11,7 +12,11 @@ const Header = () => {
           <nav>
             <ul className={`${css.navList} firstTitle`}>
               <li>
-                <Link to="/">Logo</Link>
+                <Link to="/">
+                  <div className={css.logoWrapper}>
+                    <FullyIntegratedCamperIcon className={css.logo} />
+                  </div>
+                </Link>
               </li>
               <li>
                 <Link to="Catalog">Catalog</Link>

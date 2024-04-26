@@ -1,4 +1,9 @@
 .heartSvg {
   background-color: var(--color-main-background);
   border: none;
+  fill: blue;
+}
+
+.heartSvgFavorite {
+  fill: red;
 }
